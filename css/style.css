@@ -21,3 +21,17 @@ font-family: fantasy ;
 #btn{
   border-radius: 12vw;
 }
+ul{
+  margin-left: auto;
+  font-size: 1vw;
+  list-style-type: circle;
+}
+li{
+  margin-bottom: 2vw;
+}
+.bio ul{
+  list-style-type: none;
+  border-left: 2px;
+  padding-left: 25px;
+  text-align: left;
+}

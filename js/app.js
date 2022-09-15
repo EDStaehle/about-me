@@ -15,7 +15,7 @@ button.forEach(button =>
     
     function startingQuiz(){
       let quizStart = prompt('Please answer the following questions with "y", "yes", "n", or "no". Do you understand?').toLowerCase();
-      quizStart(quizStart);
+      startOfQuiz(quizStart);
     }
 
   startingQuiz();

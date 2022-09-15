@@ -18,7 +18,7 @@ button.forEach(button =>
       quizStart(quizStart);
     }
 
-  startOfQuiz();
+  startingQuiz();
 
     function questionNumOne() {
       // let questionNum = 1;

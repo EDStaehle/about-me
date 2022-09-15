@@ -90,7 +90,7 @@ function guessGame() {
         break;
       } else {
         while (quetion !== carBrand[j] && userAttempts > 0) {
-          quetion = prompt('thta is not correct what is my favoirte car brand').toLowerCase();
+          quetion = prompt('that is not correct what is my favoirte car brand').toLowerCase();
           userAttempts--;
           alert('you have ' + userAttempts + ' attempts left');
         } if (quetion === carBrand[j]) {

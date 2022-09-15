@@ -130,17 +130,19 @@ button.forEach(button =>
       numGuess = parseInt(prompt('Guess the number 1-20'))
       if (numGuess < myNum) {
         alert('No go higher')
-        numGuess++;
+        guessesLeft++;
         alert(`you got ${4 - guessesLeft}, guess remaining.`);
       } else if (numGuess > myNum) {
         alert('No go lower');
-        numGuess++;
+        guessesLeft++;
         alert(`you got ${4 - guessesLeft}, guess remaining.`);
       } else if (numGuess == myNum) {
         alert("yeah thats it good job yay you wow youre so cool omgosh how did you know you must be so smart i can beleive you got it in only four guess how the heck i am bamboozled to say the least flabbergasted if you will this is just a revolutionary expierience");
         score++;
       }
-
+      if (guessesLeft === 4){
+        alert ('you have run out of chances.');
+      }
     }
     let carBrand = ['nissan', 'mitsubishi', 'mclarren', 'ford', 'audi'];
     let correct = false;

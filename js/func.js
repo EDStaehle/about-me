@@ -1,5 +1,5 @@
 'use strict'
-function startOfQuiz(quizStart){
+function startOfQuiz(quizStart) {
   while (quizStart !== 'y' && quizStart !== 'yes' && quizStart !== 'n' && quizStart !== 'no') {
     quizStart = prompt('that was not an answer choice, again answer with only "y", "yes", "n", or "no"').toLowerCase();
   }
@@ -67,8 +67,8 @@ function numGuessGame() {
       alert("yeah thats it good job yay you wow youre so cool omgosh how did you know you must be so smart i can beleive you got it in only four guess how the heck i am bamboozled to say the least flabbergasted if you will this is just a revolutionary expierience");
       score++;
       const audio = new Audio();
-          audio.src = "victoryyyyyyy.mp3";
-          audio.play();
+      audio.src = "victoryyyyyyy.mp3";
+      audio.play();
     }
     if (guessesLeft === 4) {
       alert('you have run out of chances.');
@@ -99,18 +99,21 @@ function guessGame() {
           score++;
           break;
         }
+        if (user === 0) {
+          alert(carBrand);
+          break;
+
+        }
+
 
       }
-
+      if (correct === true) {
+        break;
+      }
 
     }
-    if (correct === true) {
-      break;
-    }
-
+    alert(`possible answers were ${carBrand}`);
+    alert(`your score is ${score} good job`);
   }
-  alert(`possible answers were ${carBrand}`);
-  alert(`your score is ${score} good job`);
-
 
 }

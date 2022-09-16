@@ -14,8 +14,8 @@ button.forEach(button =>
   button.addEventListener('click', () => {
     
     function startingQuiz(){
-      let quizStart = prompt('Please answer the following questions with "y", "yes", "n", or "no". Do you understand?').toLowerCase();
-      startOfQuiz(quizStart);
+      let start = prompt('Please answer the following questions with "y", "yes", "n", or "no". Do you understand?').toLowerCase();
+      startOfQuiz(start);
     }
 
   startingQuiz();

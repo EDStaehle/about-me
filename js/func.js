@@ -24,13 +24,12 @@ function ansNo(asking) {
     alert('yes! thats correct next question!');
     score++;
   } else {
-    while (asking === 'y' || asking === 'yes') {
+    while (asking !== 'n' && asking !== 'no') {
       asking = prompt('That is incorrect please read my bio again and try again. Am i 26 years old?').toLowerCase();
-    } if (asking === 'n' || asking === 'no') {
+    } 
       // console.log('correct next question!');
       alert('correct next question!');
       score++;
-    }
   }
 }
 function ansYes(asking) {
@@ -89,31 +88,13 @@ function guessGame() {
         score++;
         break;
       } else {
-        while (quetion !== carBrand[j] && userAttempts > 0) {
-          quetion = prompt('that is not correct what is my favoirte car brand').toLowerCase();
-          userAttempts--;
-          alert('you have ' + userAttempts + ' attempts left');
-        } if (quetion === carBrand[j]) {
-          alert('yes that is correct');
-          correct = true;
-          score++;
-          break;
-        }
-        if (user === 0) {
-          alert(carBrand);
-          break;
-
-        }
-
-
+        alert('thats not correct try again');
       }
-      if (correct === true) {
-        break;
-      }
-
     }
-    alert(`possible answers were ${carBrand}`);
-    alert(`your score is ${score} good job`);
+    if (correct === true) {
+      break;
+    }
   }
-
+  alert(`possible answers were ${carBrand}`);
+  alert(`your score is ${score} good job`);
 }

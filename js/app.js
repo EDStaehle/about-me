@@ -1,8 +1,5 @@
 'use strict';
 
-// import { ansNo } from "./func";
-
-// .toUpperCase() toLowerCase()
 let user = prompt('Hello, what is your name?');
 let questionNum;
 let score = 0;
@@ -21,7 +18,7 @@ button.forEach(button =>
   startingQuiz();
 
     function questionNumOne() {
-      // let questionNum = 1;
+
       let asking = prompt('Am I 26 years old?');
       ansNo(asking);
     }
@@ -29,7 +26,7 @@ button.forEach(button =>
     questionNumOne();
 
     function questionNumTwo() {
-      // let questionNum = 2;
+ 
       let asking = prompt('Was I in the Marine Corps?').toLowerCase();
       ansYes(asking);
     }

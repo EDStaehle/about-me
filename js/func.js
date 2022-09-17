@@ -4,14 +4,14 @@ function startOfQuiz(quizStart) {
     quizStart = prompt('that was not an answer choice, again answer with only "y", "yes", "n", or "no"').toLowerCase();
   }
   if (quizStart === 'y' || quizStart === 'yes') {
-    // console.log('okay lets begin');
+
     alert('okay lets begin');
   }
   else {
     while (quizStart === 'n' || quizStart === 'no') {
       quizStart = prompt('you need to understand please answer with "y", or "yes"').toLowerCase();
     } if (quizStart === 'y' || quizStart === 'yes') {
-      // console.log('okay lets begin');
+  
       alert('okay lets begin');
     }
   }
@@ -20,14 +20,14 @@ function ansNo(asking) {
   while (asking !== 'y' && asking !== 'yes' && asking !== 'n' && asking !== 'no') {
     asking = prompt('that was not an answer choice, again answer with only "y", "yes", "n", or "no" ').toLowerCase();
   } if (asking === 'n' || asking === 'no') {
-    // console.log('yes! thats correct next question!');
+
     alert('yes! thats correct next question!');
     score++;
   } else {
     while (asking !== 'n' && asking !== 'no') {
       asking = prompt('That is incorrect please read my bio again and try again. Am i 26 years old?').toLowerCase();
     } 
-      // console.log('correct next question!');
+  
       alert('correct next question!');
       score++;
   }
@@ -42,7 +42,7 @@ function ansYes(asking) {
     while (asking === 'n' || asking === 'no') {
       asking = prompt('That is incorrect please read my bio again and try again. Was I in the Marine Corps?').toLowerCase();
     } if (asking === 'y' || asking === 'yes') {
-      // console.log('correct next question!');
+   
       alert('correct next question!');
       score++;
     }
@@ -77,7 +77,7 @@ function numGuessGame() {
 function guessGame() {
   let carBrand = ['nissan', 'mitsubishi', 'mclarren', 'ford', 'audi'];
   let correct = false;
-  // let numAns = 0;
+ 
   let userAttempts = 6;
   for (let i = 0; i < userAttempts; i++) {
     let quetion = prompt('what is my favorite car brand?').toLowerCase();
